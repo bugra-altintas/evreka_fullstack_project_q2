@@ -21,7 +21,6 @@ class Request{
 
 document.getElementById("ajax").addEventListener("click",create);
 function create(){
-    console.log("update");
     const req = new Request();
     req.get("https://www.bloomberght.com/piyasa/intradaydata/dolar",function(err,response){
         const responsej = JSON.parse(response);
